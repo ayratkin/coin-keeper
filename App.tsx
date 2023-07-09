@@ -1,11 +1,14 @@
+import { NativeBaseProvider } from 'native-base';
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import MainScreen from './src/screens/MainScreen/MainScreen';
+import MainScreen from '@scenes/MainScreen';
 
 const App = props => {
   return (
     <>
-      <MainScreen />
+      <NativeBaseProvider>
+        <MainScreen />
+      </NativeBaseProvider>
     </>
   );
 };
