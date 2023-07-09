@@ -16,6 +16,7 @@ module.exports = {
     '^@img/(.*)$',
     '^@(containers|components|scenes)/(.*)$',
     '^@styles/(.*)$',
+    '^[./styles]',
   ],
   importOrderSeparation: false,
   importOrderSortSpecifiers: true,
