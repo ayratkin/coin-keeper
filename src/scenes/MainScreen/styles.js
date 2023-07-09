@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { colors } from '../../styles/variables';
+import { colors } from '@styles/variables';
 
 const Styles = StyleSheet.create({
   mainScreenWrapper: {
