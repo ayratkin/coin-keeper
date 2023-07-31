@@ -1,20 +1,19 @@
 import { NativeBaseProvider } from 'native-base';
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { Provider } from 'react-redux';
+import store from '@redux/store/create';
 import MainScreen from '@scenes/MainScreen';
 
-const App = props => {
+const App = () => {
   return (
     <>
-      <NativeBaseProvider>
-        <MainScreen />
-      </NativeBaseProvider>
+      <Provider store={store}>
+        <NativeBaseProvider>
+          <MainScreen />
+        </NativeBaseProvider>
+      </Provider>
     </>
   );
 };
-
-export default App;
-
-const styles = StyleSheet.create({});
 
 export default App;
